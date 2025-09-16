@@ -1,0 +1,52 @@
+{
+  "name": "gtu-ai-attendance-system",
+  "version": "1.0.0",
+  "description": "An intelligent attendance management system specifically designed for Gujarat Technological University (GTU) SEM-3 CSE(DS) students",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm run install-backend && npm run install-frontend && npm run install-ai",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install", 
+    "install-ai": "cd ai-services && pip install -r requirements.txt",
+    "start": "concurrently \"npm run start-ai\" \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-frontend": "cd frontend && npm run dev",
+    "start-backend": "cd backend && npm start",
+    "start-ai": "cd ai-services && python ai_service_gemini.py",
+    "dev": "npm run start",
+    "build": "cd frontend && npm run build",
+    "lint": "cd frontend && npm run lint",
+    "test": "echo \"Tests will be implemented in future versions\"",
+    "setup": "node setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/gtu-ai-attendance-system.git"
+  },
+  "keywords": [
+    "gtu",
+    "attendance",
+    "ai",
+    "gemini",
+    "student",
+    "education",
+    "next.js",
+    "node.js",
+    "python",
+    "flask",
+    "react"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/gtu-ai-attendance-system/issues"
+  },
+  "homepage": "https://github.com/yourusername/gtu-ai-attendance-system#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0",
+    "python": ">=3.9.0"
+  }
+}
