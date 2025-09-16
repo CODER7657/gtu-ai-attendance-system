@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/gtu-ai-attendance-system.git"
+    "url": "git+https://github.com/CODER7657/gtu-ai-attendance-system.git"
   },
   "keywords": [
     "gtu",
@@ -38,9 +38,9 @@
   "author": "Your Name <your.email@example.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/gtu-ai-attendance-system/issues"
+    "url": "https://github.com/CODER7657/gtu-ai-attendance-system/issues"
   },
-  "homepage": "https://github.com/yourusername/gtu-ai-attendance-system#readme",
+  "homepage": "https://github.com/CODER7657/gtu-ai-attendance-system#readme",
   "devDependencies": {
     "concurrently": "^8.2.2"
   },

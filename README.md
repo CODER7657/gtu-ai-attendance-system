@@ -58,7 +58,7 @@
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/gtu-ai-attendance-system.git
+git clone https://github.com/CODER7657/gtu-ai-attendance-system.git
 cd gtu-ai-attendance-system
 ```
 
@@ -221,7 +221,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/gtu-ai-attendance-system/issues)
+- **Issues**: [GitHub Issues](https://github.com/CODER7657/gtu-ai-attendance-system/issues)
 - **Email**: your-email@example.com
 - **Documentation**: Check `/docs` folder for detailed guides
 
