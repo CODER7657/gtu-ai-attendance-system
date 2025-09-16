@@ -84,7 +84,7 @@ Your AI assistant can now help with:
 
 ### 🔑 **API Key Status:**
 
-✅ **Updated API Key**: `AIzaSyDZYXDCjem2zUUQF6VDAsQL016fQetqc68`
+
 ✅ **Model**: Gemini 2.5 Pro (Latest Available)
 ✅ **Status**: Active and Working
 ✅ **Features**: Advanced reasoning, multimodal processing, enhanced context
