@@ -1,6 +1,5 @@
 # 🎓 GTU AI Attendance System
-
-**An intelligent attendance management system specifically designed for Gujarat Technological University (GTU) SEM-3 CSE(DS) students**
+**An intelligent attendance management system designed for Gujarat Technological University (GTU) students and adaptable for other universities**
 
 ![GTU AI Attendance System](https://img.shields.io/badge/GTU-Attendance%20System-blue)
 ![Next.js](https://img.shields.io/badge/Next.js-15.5.3-black)
@@ -10,223 +9,86 @@
 
 ## 🚀 Features
 
-### 🎯 GTU Policy Compliance
-- **70% Minimum Attendance**: Automatic tracking for GTU exam eligibility
-- **Medical Certificate Support**: 60% minimum with valid 14+ day documentation
-- **Bonus Marks Calculator**: Up to 23 total bonus marks (15 + 4 + 4)
+### 🎯 University Policy Compliance
+- **Minimum Attendance Tracking**: Automatic monitoring for exam eligibility (GTU: 70% minimum)
+- **Medical Certificate Support**: Reduced attendance requirements with valid medical documentation
+- **Bonus Marks Calculator**: Track additional marks based on attendance performance
 - **Real-time Warnings**: Alerts for attendance thresholds and policy violations
+- **Flexible Policy Settings**: Adaptable to different university attendance requirements
 
-### 📚 SEM-3 CSE(DS) Specific
-- **Subject Tracking**: DS, DBMS, PS, DF, IC, PCE with weekly class schedules
-- **Division Management**: DIV-9 (Roll 1-35) and DIV-10 (Roll 36-69) support
-- **Preference Learning**: AI understands liked vs disliked subjects
-- **Strategic Planning**: Optimized attendance patterns based on preferences
+### 📚 Academic Management
+- **Subject Tracking**: Monitor attendance across all enrolled subjects
+- **Division Management**: Support for multiple class divisions and sections
+- **Preference Learning**: AI understands your preferred and challenging subjects
+- **Strategic Planning**: Optimized attendance patterns based on your academic preferences
+- **Custom Schedules**: Flexible support for various class timetables
 
 ### 🧠 AI-Powered Intelligence
-- **Gemini 1.5 Flash**: Fast, accurate AI responses
-- **Personalized Advice**: Context-aware recommendations
-- **Document Analysis**: PDF timetable processing
-- **Real-time Chat**: 24/7 AI assistant for attendance queries
+- **Gemini 1.5 Flash**: Fast, accurate AI responses for attendance queries
+- **Personalized Advice**: Context-aware recommendations based on your academic profile
+- **Smart Analytics**: Intelligent analysis of attendance patterns and trends
+- **Real-time Chat**: 24/7 AI assistant for attendance-related questions
+- **Predictive Insights**: Forecasting attendance requirements for upcoming periods
 
 ### 💻 Modern Web Interface
-- **Responsive Design**: Works on desktop and mobile
-- **Real-time Updates**: Live attendance tracking
-- **Interactive Dashboard**: Visual progress indicators
-- **File Upload**: Drag-and-drop timetable processing
+- **Responsive Design**: Seamless experience on desktop and mobile devices
+- **Real-time Updates**: Live attendance tracking and notifications
+- **Interactive Dashboard**: Visual progress indicators and attendance statistics
+- **User-friendly Interface**: Intuitive design for easy navigation and data entry
+- **Multi-language Support**: Adaptable for different regional requirements
 
-## 🏗️ Architecture
+### 🔧 Customization & Flexibility
+- **University Agnostic**: While developed for GTU, easily adaptable for other institutions
+- **Custom Policies**: Configure attendance requirements based on your university's rules
+- **Flexible Subjects**: Add and manage any subjects or courses
+- **Semester Management**: Support for different semester systems and academic calendars
+- **Data Export**: Export attendance reports in various formats
 
-```
-├── frontend/          # Next.js 15.5.3 React application
-├── backend/           # Express.js API server  
-├── ai-services/       # Python Flask + Gemini AI service
-└── docs/             # Documentation and guides
-```
+## 🎯 Primary Focus: Gujarat Technological University (GTU)
 
-### Components:
-- **Frontend** (Port 3000): Modern React UI with TypeScript
-- **Backend** (Port 5000): Express.js API with file processing
-- **AI Service** (Port 5001): Python Flask with Gemini AI integration
+This system was specifically developed with GTU's academic structure and policies in mind:
+- GTU's minimum 70% attendance requirement for exam eligibility
+- Standard GTU semester structure and academic calendar
+- GTU's bonus marks system for attendance
+- Medical certificate policies as per GTU guidelines
 
-## 🛠️ Installation
+## 🌍 Universal Compatibility
+
+While optimized for GTU, the system is designed to be adaptable for other universities by:
+- Configuring custom attendance percentage requirements
+- Adjusting academic calendar and semester structures
+- Modifying bonus marks and incentive systems
+- Customizing subject and division management
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ and npm
-- Python 3.9+ with pip
-- Git
-- Gemini API key (free from Google AI Studio)
+- Node.js (v18 or higher)
+- Python (v3.8 or higher)
+- Modern web browser
 
-### 1. Clone Repository
-```bash
-git clone https://github.com/yourusername/gtu-ai-attendance-system.git
-cd gtu-ai-attendance-system
-```
+### Quick Setup
+1. Clone the repository
+2. Run the setup script for your operating system
+3. Configure your university-specific settings
+4. Start tracking your attendance!
 
-### 2. Backend Setup
-```bash
-cd backend
-npm install
-```
+## 📊 Key Benefits
 
-### 3. Frontend Setup  
-```bash
-cd frontend
-npm install
-```
-
-### 4. AI Service Setup
-```bash
-cd ai-services
-pip install -r requirements.txt
-```
-
-### 5. Environment Configuration
-Create `.env` files in `/backend` and `/ai-services`:
-
-**backend/.env:**
-```
-PORT=5000
-AI_SERVICE_URL=http://localhost:5001
-NODE_ENV=development
-```
-
-**ai-services/.env:**
-```
-GEMINI_API_KEY=your-gemini-api-key-here
-FLASK_ENV=development
-```
-
-## 🚦 Quick Start
-
-### Start All Services:
-
-**Terminal 1 - AI Service:**
-```bash
-cd ai-services
-python ai_service_gemini.py
-```
-
-**Terminal 2 - Backend:**
-```bash
-cd backend
-npm start
-```
-
-**Terminal 3 - Frontend:**
-```bash
-cd frontend
-npm run dev
-```
-
-### Access the Application:
-- **Main App**: http://localhost:3000
-- **Dashboard**: http://localhost:3000/dashboard
-- **Chat**: http://localhost:3000/chat  
-- **Upload**: http://localhost:3000/upload
-
-## 📊 Usage Guide
-
-### 1. Dashboard Overview
-- View current 72% attendance status
-- Check GTU exam eligibility
-- See bonus marks potential (15 current)
-- Monitor subject-wise performance
-
-### 2. Upload Timetable
-- Drag-and-drop PDF timetable
-- AI automatically extracts class schedules
-- System processes division-specific timing
-
-### 3. AI Chat Assistant
-Ask questions like:
-- "How many classes do I need to maintain 70%?"
-- "Which subjects should I prioritize?"
-- "What's my bonus marks potential?"
-- "Am I safe for GTU exams?"
-
-### 4. Strategic Planning
-- **Maintain Current (72%)**: Can skip 53/190 remaining classes
-- **Safe Buffer (75%)**: Can skip 40/190 remaining classes
-- **Bonus Optimization (80%)**: Can skip 30/190 remaining classes
-
-## 📈 Current Status Example
-
-### Your GTU Profile:
-- **Overall Attendance**: 72% (SAFE - above 70%)
-- **Classes Completed**: 137 out of 190
-- **Remaining Time**: 10 weeks in semester
-- **Exam Eligible**: ✅ YES
-- **Bonus Marks**: 15 available (11 attendance + 4 first-days)
-
-### Subject Breakdown:
-| Subject | Code | Attendance | Status | Weekly Classes |
-|---------|------|------------|---------|----------------|
-| Data Structures | DS | 85% | 💚 Liked | 4 |
-| Database Systems | DBMS | 80% | 💚 Liked | 4 |
-| Probability & Stats | PS | 75% | 💚 Liked | 3 |
-| Digital Fundamentals | DF | 70% | 🟡 Neutral | 4 |
-| Indian Constitution | IC | 55% | 🔴 Needs Attention | 2 |
-| Communication Ethics | PCE | 60% | 🔴 Needs Attention | 2 |
-
-## 🔧 API Endpoints
-
-### Backend (Port 5000)
-- `POST /api/upload` - File upload processing
-- `POST /api/calculate-attendance` - Attendance calculations
-- `POST /api/chat` - AI chat interface
-- `POST /api/process-preferences` - User preference analysis
-
-### AI Service (Port 5001)  
-- `POST /chat` - Gemini AI chat processing
-- `POST /process-document` - PDF document analysis
-- `GET /health` - Service health check
-
-## 🎯 GTU Policy Integration
-
-### Attendance Rules:
-- **Minimum Required**: 70% for exam eligibility
-- **Medical Relaxation**: 60% with valid certificate (14+ consecutive days)
-- **Late Policy**: >5 minutes late = marked absent
-- **Proxy Penalty**: Strict punishment, bonus marks forfeited
-
-### Bonus Marks System:
-1. **Attendance Bonus**: Up to 15 marks based on percentage
-2. **First 4 Days**: 4 marks if attended all classes (July 21-24, 2025)  
-3. **All Clear**: 4 marks if all subjects pass after other bonuses
-4. **Maximum Total**: 23 bonus marks possible
-
-### Critical Thresholds:
-- **Below 60%**: Exam ineligible (even with medical)
-- **Below 70%**: Need medical certificate or lose all bonuses
-- **Form Deadline**: Must maintain 70% until GTU form submission
+- **Stay Eligible**: Never miss exam eligibility due to low attendance
+- **Smart Planning**: AI-powered recommendations for optimal attendance strategy
+- **Real-time Monitoring**: Instant updates on your attendance status
+- **Multi-University Support**: Adaptable to various institutional requirements
+- **Academic Success**: Focus on learning while the system handles attendance tracking
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
+We welcome contributions to make this system even more universal and feature-rich! Whether you're from GTU or any other university, your input helps improve the system for everyone.
 
-## 📝 License
+## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Gujarat Technological University** for attendance policies
-- **Google Gemini AI** for intelligent processing
-- **Next.js & React** for modern web framework
-- **SEM-3 CSE(DS) Students** for real-world requirements
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/gtu-ai-attendance-system/issues)
-- **Email**: your-email@example.com
-- **Documentation**: Check `/docs` folder for detailed guides
+This project is open source and available under the MIT License.
 
 ---
 
-**Made with ❤️ for GTU SEM-3 CSE(DS) Students**
-
-*Achieve optimal attendance while maintaining academic balance!* 🎓✨
+*Built with ❤️ for GTU students and the broader academic community*
